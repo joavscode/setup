@@ -1,5 +1,10 @@
 #!/bin/bash
 
+
+# Fedora Workstation Automation Setup
+# Author: Joav YO
+# This script sets up a complete developer environment on Fedora Linux
+
 set -e  # Exit immediately if a command exits with a non-zero status
 
 PYTHON_VERSION=3.10  # Define Python version
