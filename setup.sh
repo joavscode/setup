@@ -27,10 +27,7 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 source $HOME/.cargo/env
 
 # Install Brave Browser
-sudo dnf install -y dnf-plugins-core
-sudo dnf config-manager --add-repo https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
-sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
-sudo dnf install -y brave-browser
+curl -fsS https://dl.brave.com/install.sh | sh
 
 # Install JetBrains Toolbox
 wget -O jetbrains-toolbox.tar.gz "https://data.services.jetbrains.com/products/download?code=TB&platform=linux"
